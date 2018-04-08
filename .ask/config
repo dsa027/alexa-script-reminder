@@ -1,0 +1,19 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.b2b3c351-05a7-4f48-a046-f0d63ba2e9a5",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-PrescriptionReminder-default"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

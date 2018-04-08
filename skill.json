@@ -1,0 +1,35 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Get reminders for all your prescriptions.",
+          "examplePhrases": [
+            "Alexa, open prescription reminder",
+            "Alexa ask prescription reminder to start over",
+            "Alexa tell prescription reminder restart"
+          ],
+          "keywords": [
+            "prescription",
+            "reminder",
+            "alarm"
+          ],
+          "name": "Prescription Reminder",
+          "description": "Have prescription reminder remind you when to take your prescriptions. Enter prescription information into Alexa using easy directions and Alexa will then remind you when to take your prescriptions. To start, just say 'Alexa, launch Prescription Reminder' or 'Alexa, open Prescription Reminder' to get started. At any time, you can stop by saying 'Alexa, stop'"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Ask prescription reminder to enter a prescription. Enter the prescription using the prescription name, dosage and alarm time, and expiration. You may do this for all your prescriptions. Then wait for Alexa to remind you to take your prescriptions.",
+      "category": "HEALTH_AND_FITNESS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

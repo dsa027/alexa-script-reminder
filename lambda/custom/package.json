@@ -1,0 +1,12 @@
+{
+  "name": "prescription_reminder",
+  "version": "1.0.0",
+  "description": "Get reminders to take your prescriptions.",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.0"
+  },
+  "devDependencies": {},
+  "author": "David Alderson",
+  "license": "SEE LICENSE IN license.md"
+}

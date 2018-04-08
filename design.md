@@ -1,0 +1,71 @@
+# Prescription reminder adherence app
+
+# Intent Schema
+- AMAZON.
+  - .CancelIntent
+  - .HelpIntent
+  - .StopIntent
+  - .StartOverIntent
+  - .RepeatIntent
+  - .YesIntent
+  - .NoIntent
+- ListRemindersIntent (for a specific prescription)
+  - "reminders for __{ScriptName}__"
+- ListScriptIntent
+  - "list my prescriptions"
+  - "list the prescriptions"
+  - "list our prescriptions"
+- ListScriptNamesIntent
+  - "you tell me"
+  - "you tell"
+- UseScriptNameIntent
+  - "I'll tell you"
+  - "I will tell you"
+  - "I tell you"
+  - slots: scriptName
+- ChangeScriptIntent (prompts for *ListScriptNamesIntent* or *UseScriptNameIntent*)
+  - "change prescription"
+  - "change prescriptions"
+  - "change my prescription"
+  - "change my prescriptions"
+- AddScriptIntent
+  - "add prescription"
+  - "add a prescription"
+  - "add my prescription"
+  - "add the prescription"
+  - slots: scriptName, scriptDow, scriptTime
+- AnotherReminderIntent
+  - "another reminder"
+  - "add reminder"
+  - "add a reminder"
+  - "add alarm"
+  - "add alert"
+  - slots: scriptDow, scriptTime
+- DeleteScriptIntent (prompts for *ListScriptNamesIntent* or *UseScriptNameIntent*)
+  - "remove prescription"
+  - "remove prescriptions"
+  - "remove my prescription"
+  - "remove a prescription"
+  - "remove the prescription"
+- NextReminderIntent
+  - "next reminder"
+- LastReminderIntent
+  - "last reminder"
+- TodaysRemindersIntent
+  - "today's reminders"
+- PauseRemindersIntent
+  - "pause reminders"
+- ResumeRemindersIntent
+  - "resume reminders"
+- RemoveAllScriptsIntent
+  - "remove all prescriptions"
+
+# Built-In Slots
+- AMAZON.DATE
+  - For single-date-only alarm
+- AMAZON.DayOfWeek
+  - scriptDow
+- AMAZON.TIME
+  - scriptTime
+- AMAZON.SearchQuery
+  - scriptName
